@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Cumpleaños Jose </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body class="bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen flex items-center justify-center overflow-hidden relative">
+    <div class="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
+
+      <lottie-player
+        src="https://assets1.lottiefiles.com/packages/lf20_UJNc2t.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 100%"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+
+    <div id="contenidoPrincipal" class="relative z-10 text-center px-6 py-12 bg-white/70 rounded-2xl shadow-xl backdrop-blur-md max-w-xl mx-auto animate-fade-in transition-opacity duration-1000 ease-in-out">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-purple-800 mb-4 animate-bounce">
+        🎉 ¡Feliz Cumpleaños Amigo! 🎉
+      </h1>
+      <p class="text-lg text-gray-700 mb-6">
+        Hoy es un día muy especial y esta página está hecha solo para ti. Gracias por ser ese amigo increible que siempre me acompaña en cualquier situación. 🥳
+      </p>
+
+      <button
+      id="botonRegalo"
+        onclick="mostrarMensaje()"
+        class="bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105"
+      >
+        🎁 Abre tu regalo care monda❕
+      </button>
+    </div>
+
+    <div id="mensajeSecreto" class="opacity-0 pointer-events-none fixed inset-0 bg-white flex flex-col items-center justify-center z-50 text-center px-6 transition-opacity duration-1000 ease-in-out">
+      <div id="emojiAnimado" class="text-7xl animate-bounce mb-4"></div>
+
+      <lottie-player
+        id="giftAnimation"
+        src="https://assets1.lottiefiles.com/packages/lf20_touohxv0.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+      ></lottie-player>
+
+      <div id="carrusel" class="mt-8 w-full relative">
+        <div id="mensajes" class="transition-all duration-700 ease-in-out">
+          <p class="mensaje w-full   text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🎮">Hola hermanito, me hubiera encantado estar presente en este día tan especial, tu sabes que el cariño que te guardo es gigantezco, sin importar cuanto tiempo nos tome volver a hablar, sin cuestionar las veces que hablamos al día, al mes o al año, nunca dudo en incluirte dentro del pequeño grupo de personas especiales en mi vida, para mi más que un amigo eres mi hermano y siempre que pienso en ti me da felicidad el ver que trabajas en tus sueños, que eres una buena persona, un un buen hombre, eres la imagen viva de una buena compañia, me llena de orgullo saber que tuve el placer de concerte y compartir contigo.
+            Comer en tu casa, jugar contigo, reir contigo, enojarme contigo; mejor dicho vos sabes todo lo que hemos vivido, sobre todo nunca olvidaria todas las veces que has estado para apoyarme y escucharme cuando he atravesado situaciones complicadas.
+            Mi hermano yo a usted lo amo y desde la distancia te envio el mejor de los días, que lo disfrutes con tu familia, con tus personas allegadas e importantes.
+            <strong>Esta monda no se acaba ;3 </strong><br>
+            Antes de que dejes de leer y no quiero aburrirte care monda jasdjsa, quiero desearte bendiciones que cumplas todos tus sueños y cualquier monda sabes donde encontrarme
+            (los insultos para no perder la costumbre jasdjsajd)
+            <br>
+            Esta vaina es lo unico que tengo para darte hoy pero siempre tendras todo de mí mi amor 😘
+            <strong>Que vivan los galacticos 😎🚀!!!!!!!!!!!!</strong>
+          </p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🧩">Te dejo unos mensajitos pa que trin, ya tu sabe ;3</p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🎂">Que este nuevo año esté lleno de alegrías inesperadas.</p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🌟">Que sigas brillando con luz propia y conquistando tus sueños.</p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🎁">Gracias por tu amistad, eres un regalo en mi vida.</p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="💝">Que me quiten el lol pero no a ti (soy loladicto :D!).</p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="😍">Cañavera eres la monda bro te quiero mucho... </p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="😜">Sigue pasando, que esta verga no alcanza para decirte cuanto te amo rey </p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="❤️‍🔥">Perdona los insultos y los extensos, usted me descontrola compadre! 🥵🥵🥵 </p>
+          <p class="mensaje text-2xl sm:text-3xl font-bold text-purple-800 hidden" data-emoji="🎊">Feliz cumpleaños hermano, que cumplas hasta el infinito y más allá</p>
+        </div>
+
+        <div class="flex justify-center gap-4 mt-6">
+          <button onclick="anteriorMensaje()" class="bg-purple-300 hover:bg-purple-200 text-white font-bold py-2 px-4 rounded-full shadow-md">⬅️</button>
+          <button onclick="siguienteMensaje()" class="bg-purple-300 hover:bg-purple-200 text-white font-bold py-2 px-4 rounded-full shadow-md">➡️</button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out;
+      }
+    </style>
+  <script>
+    document.getElementById("botonRegalo").addEventListener("click", () => {
+      const elem = document.documentElement;
+
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { 
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { 
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { 
+        elem.msRequestFullscreen();
+      }
+    });
+  </script>
+    <script>
+      let mensajeIndex = 0;
+
+      function actualizarEmoji() {
+        const mensajes = document.querySelectorAll(".mensaje");
+        const emoji = mensajes[mensajeIndex].dataset.emoji;
+        document.getElementById("emojiAnimado").textContent = emoji;
+      }
+
+      function mostrarMensaje() {
+        const principal = document.getElementById("contenidoPrincipal");
+        const mensaje = document.getElementById("mensajeSecreto");
+        const mensajes = document.querySelectorAll(".mensaje");
+
+        principal.classList.add("opacity-0");
+        setTimeout(() => {
+          principal.classList.add("hidden");
+          mensaje.classList.remove("pointer-events-none");
+          mensaje.classList.remove("opacity-0");
+          document.getElementById("giftAnimation").play();
+          mensajes[0].classList.remove("hidden");
+          actualizarEmoji();
+        }, 1000);
+      }
+
+      function siguienteMensaje() {
+        const mensajes = document.querySelectorAll(".mensaje");
+        mensajes[mensajeIndex].classList.add("hidden");
+        mensajeIndex = (mensajeIndex + 1) % mensajes.length;
+        mensajes[mensajeIndex].classList.remove("hidden");
+        actualizarEmoji();
+      }
+
+      function anteriorMensaje() {
+        const mensajes = document.querySelectorAll(".mensaje");
+        mensajes[mensajeIndex].classList.add("hidden");
+        mensajeIndex = (mensajeIndex - 1 + mensajes.length) % mensajes.length;
+        mensajes[mensajeIndex].classList.remove("hidden");
+        actualizarEmoji();
+      }
+    </script>
+  </body>
+</html>
